@@ -1,0 +1,7 @@
+1) create 2 server 1 is t2.medium 2 is t2.micro
+2) on t2.medium install SONARQUBE & JENKINS
+3) on t2.medium install tomcat and install slave server
+4) after done above process add cradentials
+5) write the pipeline and take code url from jenkins-javaproject url. And run the pipeline
+6) cooy the public ip of t2.medium server and past on browser like this (35.180.97.49:8080).
+7) netfilx application is successfully deployes.
