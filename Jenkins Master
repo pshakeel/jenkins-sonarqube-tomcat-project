@@ -1,4 +1,4 @@
-#Install jenkins in sonarqube server
+#Install jenkins in sonarqube server.
 
 yum install git java-1.8.0-openjdk maven -y
 
