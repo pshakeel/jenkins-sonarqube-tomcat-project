@@ -15,4 +15,4 @@ cd /opt/sonarqube-8.9.6.50800/bin/linux/
 sh sonar.sh start
 sh sonar.sh status
 
-#echo "user=admon & password=admin"
+#echo "user=admin & password=admin"
