@@ -1,0 +1,14 @@
+SETUP:
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80.tar.gz
+tar -zxvf apache-tomcat-9.0.80.tar.gz && cd apache-tomcat-9.0.80
+vim webapps/manager/META-INF/context.xml  (delete line 21 and 22)
+vim conf/tomcat-users.xml (copy paste those lines in last)
+
+ <role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <user username="tomcat" password="raham123" roles="manager-gui, manager-script"/>
+
+./bin/startup.sh
+login: public-ip:8080 -- > manager app -- > username: tomcat passowrd:raham123 -- > enter
+ADD CREDS:
+Manage jenkins -- > credentials -- > global -- > add credentials -- > kind: username with password -- > user: tomcat password: raham123 -- > save
